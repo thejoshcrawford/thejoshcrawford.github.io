@@ -9,6 +9,9 @@ comments: true
 
 These days if your project is not using open source code you are either living under a rock or under very strict requirements. This post highlights how easy it is to publish you open source package to Nuget.
 
+More coming soon...
+
+<!---
 {% highlight css %}
 #container {
     float: left;
@@ -49,3 +52,4 @@ module Jekyll
   end
 end
 {% endhighlight %}
+-->
