@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a StartSSL SSL Certificate for Azure
+title: Creating a StartSSL SSL Certificate for Azure
 excerpt: "Here are the steps to create a StartSSL ssl certificate for use on an Azure website."
 tags: [nuget, package manager, open source]
 modified: 2015-01-24
