@@ -35,6 +35,9 @@ Creating an SSL certificate for a website is a necessary task, but one infrequen
   * Repeat for all domains that need to be secured.
   * Save
 
+I started this process when I needed to swap my old SHA1 cert to a SHA256 cert. After installing the cert and setting it in the portal my site still served the old cert. I thought it was a bug in the portal and tried to restart my server, stop it and start it and delete the old cert (didn't work because I had another server using it), but I still thought that there was a bug in Azure so I created a post on their forum in hopes that someone would help me out. After creating my post I noticed a "Search related threads" link at the top of the page that lead me to this thread [Sporadic wrong certificate being served](https://social.msdn.microsoft.com/Forums/azure/en-US/58de9b0d-da5b-4bd6-8b75-8be10a3a3553/sporadic-wrong-certificate-being-served?forum=windowsazurewebsitespreview) This thread suggested that your A record IP needs to match the virtual IP given to the website. I had overlooked this point an as soon as I set my A record correctly the correct certificate was serve.
+
+Another setback I experienced was that StartSSL was using a SHA1 intermediate certificate. I didn't really know how intermidiate certificates worked so I leveled up my knowledge [here](https://forum.startcom.org/viewtopic.php?f=15&t=15741)
 
 <!---
 {% highlight css %}
