@@ -7,7 +7,7 @@ modified: 2015-01-24
 comments: true
 ---
 
-Creating an SSL certificate for a website is a necessary task, but one infrequently completed. StartSSL has been my go to certificate authority because of the suggestions by [Troy Hunt](http://www.troyhunt.com/2013/09/the-complete-guide-to-loading-free-ssl.html). They are very inexpensive however their website isn't the most intuitive. That being said I usually forget the steps I need to follow to create an SSL cert for a new site so as a reminder I created these quick and dirty steps for creating and using a certificate with StartSSL for an Azure website. I am not security expert so comment below if you know of a better or more secure method.
+Creating an SSL certificate for a website is a necessary task, but one may be infrequently completed. Because of this I always seem to forget how to generate and install my SSL certificate properly. StartSSL has been my go to certificate authority because of the suggestions by [Troy Hunt](http://www.troyhunt.com/2013/09/the-complete-guide-to-loading-free-ssl.html). They are very inexpensive however their website isn't the most intuitive. That being said I usually forget the steps I need to follow to create an SSL cert for a new site so as a reminder I created these quick and dirty steps for creating and using a certificate with StartSSL for an Azure website. I am not security expert so comment below if you know of a better or more secure method.
 
 1. Generate StartSSL Cert
   * Authenticate with [http://startssl.com](http://startssl.com)
@@ -37,7 +37,7 @@ Creating an SSL certificate for a website is a necessary task, but one infrequen
 
 I started this process when I needed to swap my old SHA1 cert to a SHA256 cert. After installing the cert and setting it in the portal my site still served the old cert. I thought it was a bug in the portal and tried to restart my server, stop it and start it and delete the old cert (didn't work because I had another server using it), but I still thought that there was a bug in Azure so I created a post on their forum in hopes that someone would help me out. After creating my post I noticed a "Search related threads" link at the top of the page that lead me to this thread [Sporadic wrong certificate being served](https://social.msdn.microsoft.com/Forums/azure/en-US/58de9b0d-da5b-4bd6-8b75-8be10a3a3553/sporadic-wrong-certificate-being-served?forum=windowsazurewebsitespreview) This thread suggested that your A record IP needs to match the virtual IP given to the website. I had overlooked this point an as soon as I set my A record correctly the correct certificate was serve.
 
-Another setback I experienced was that StartSSL was using a SHA1 intermediate certificate. I didn't really know how intermidiate certificates worked so I leveled up my knowledge [here](https://forum.startcom.org/viewtopic.php?f=15&t=15741)
+Another setback I experienced was that StartSSL was using a SHA1 intermediate certificate. I didn't really know how intermidiate certificates worked so I leveled up my knowledge [here](https://forum.startcom.org/viewtopic.php?f=15&t=15741) Unfortunately I haven't been able to figure out how to remove the old intermediate certificate without re-creating a new website. I'll update this as soon as I get some support from Azure.
 
 <!---
 {% highlight css %}
