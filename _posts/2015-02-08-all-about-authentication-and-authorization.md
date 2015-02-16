@@ -6,8 +6,9 @@ tags: [authentication, authorization, web applications, mobile, oauth, openid]
 modified: 2015-02-08
 comments: true
 ---
+Coming soon.
 
-What is Authentication?
+<!-- What is Authentication?
 
 What is Authorization?
 
