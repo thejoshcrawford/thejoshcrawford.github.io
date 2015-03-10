@@ -7,15 +7,15 @@ modified: 2015-01-24
 comments: true
 ---
 
-These days if your project is not using open source code you are either living under a rock or under very strict project requirements. This post highlights how easy it is to publish you open source package to Nuget with ASP.NET 5 and Visual Studio 2015.
+These days if your project is not using open source code you are either living under a rock or under very strict project requirements. This post highlights how easy it is to publish your open source package to Nuget with ASP.NET 5 and Visual Studio 2015.
 
-The _Roslyn_ compiler by default will be compiling into memory to keep your builds as fast as possible, however we need output we can publish. Open up the properties of your application and go to the build tab. Make sure "Produce outputs on build" is checked.
+The _Roslyn_ compiler by default will be compiling into memory to keep your builds as fast as possible, however we need output we can publish. Open up the properties of your project and go to the build tab. Make sure "Produce outputs on build" is checked.
 <br>
 <br>
 ![produce outputs property](http://crawford.cc/images/properties-build-outputs.png "Produce Outputs on Build")
 <br>
 <br>
-This will make sure the successful build creates a NuGet package (.nupkg) in the Debug or Releases directories.
+This will make sure the successful build creates a NuGet package (.nupkg) in the Debug or Release directories.
 <br>
 <br>
 ![nuget nupkg package](http://crawford.cc/images/nupkg.png "NuGet Nupkg Package")
