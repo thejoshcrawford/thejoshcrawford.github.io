@@ -11,7 +11,9 @@ These days if your project is not using open source code you are either living u
 
 The _Roslyn_ compiler by default will be compiling into memory to keep your builds as fast as possible, however we need output we can publish. Open up the properties of your application and go to the build tab. Make sure "Produce outputs on build" is checked.
 
+
 ![produce outputs property](http://crawford.cc/images/properties-build-outputs.png "Produce Outputs on Build")
+
 
 This will make sure the successful build creates a NuGet package (.nupkg) in the Debug or Releases directories.
 
