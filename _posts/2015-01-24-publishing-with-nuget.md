@@ -11,16 +11,16 @@ These days if your project is not using open source code you are either living u
 
 The _Roslyn_ compiler by default will be compiling into memory to keep your builds as fast as possible, however we need output we can publish. Open up the properties of your application and go to the build tab. Make sure "Produce outputs on build" is checked.
 
-![produce outputs property](../images/properties-build-outputs.png "Produce Outputs on Build")
+![produce outputs property](./images/properties-build-outputs.png "Produce Outputs on Build")
 
 This will make sure the successful build creates a NuGet package (.nupkg) in the Debug or Releases directories.
 
-![nuget nupkg package](../images/nupkg.png "NuGet Nupkg Package")
+![nuget nupkg package](./images/nupkg.png "NuGet Nupkg Package")
 
 The package can be opened and edited with the [NuGet Package Explorer](http://npe.codeplex.com/) to make sure the details are correct before publishing.
 
 To publish the package login to your account at [https://www.nuget.org/](https://www.nuget.org/) and click on the _Upload Package_ link in the menu bar. Select and upload your .nupkg package, edit any details and submit.
 
-![nuget upload](../images/nuget.png "NuGet Upload")
+![nuget upload](./images/nuget.png "NuGet Upload")
 
 That's all there is to it. Creating and publishing reusable packages in .NET 5 with Visual Studio 2015 is very straightforward and painless for simple packages. For advanced packages check the documentation [here](http://docs.nuget.org/)
