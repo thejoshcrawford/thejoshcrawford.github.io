@@ -54,7 +54,7 @@ owner:
   soundcloud: 
   weibo: 
   flickr:
-  resumemonk: 9644-josh/resumes/7300
+  resumemonk: bimuro
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
