@@ -25,7 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+markdown: kramdown #test
 remote_theme: "mmistakes/minimal-mistakes@4.16.0"
 plugins:
   - jekyll-include-cache
