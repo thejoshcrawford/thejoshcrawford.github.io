@@ -1,60 +1,43 @@
-# Site wide configuration
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title:            crawford.cc
-locale:           en_US
-url:              http://crawford.cc
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
+# Build settings
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.16.0"
+plugins:
+  - jekyll-include-cache
 
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-
-# Site owner
-owner:
-  name: Josh Crawford
-  avatar: https://s.gravatar.com/avatar/76708b9af92b41d3861956800fc75a54?s=100
-  bio: "I have a passion for small companies and start-ups that can utilize my skills as a full stack web applications developer. During my fourteen years of experience, I have worked with a wide array of clients ranging from Kraft Foods to the Department of Defense. I am a certified CrossFit instructor, wilderness survival expert and bitcoin enthusiast."
-  email: josh@crawford.cc
-  disqus-shortname: joshcrawford
-  twitter: thejoshcrawford
-  facebook:
-  google:
-    plus:
-    analytics: UA-24534074-1
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: thejoshcrawford
-  stackoverflow: 965935/josh-c
-  linkedin: thejoshcrawford
-  instagram:
-  lastfm: 
-  tumblr: 
-  pinterest: 
-  foursquare: 
-  steam: 
-  dribbble: 
-  youtube: 
-  soundcloud: 
-  weibo: 
-  flickr:
-  resumemonk: bimuro
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
