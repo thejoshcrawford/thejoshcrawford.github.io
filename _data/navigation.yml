@@ -1,0 +1,22 @@
+# Site navigation links
+
+- title: Email
+  url: mailto:josh@crawford.cc
+
+- title: Resume
+  url: https://www.resumonk.com/bimuro
+
+- title: LinkedIn
+  url: http://linkedin.com/in/thejoshcrawford
+
+- title: Github
+  url: http://github.com/thejoshcrawford
+
+- title: StackOverflow
+  url: http://stackoverflow.com/users/965935/josh-c
+
+- title: Twitter
+  url: http://twitter.com/thejoshcrawford
+
+#- title: Theme Setup
+#  url: /theme-setup/
