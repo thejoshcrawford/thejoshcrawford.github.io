@@ -43,7 +43,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -65,14 +65,12 @@ owner:
   email: josh@crawford.cc
   disqus-shortname: joshcrawford
   twitter: thejoshcrawford
-  facebook:
   google:
     plus:
     analytics: UA-24534074-1
     verify: 
     ad-client: 
     ad-slot: 
-  bing-verify: 
   github: thejoshcrawford
   stackoverflow: 965935/josh-c
   linkedin: thejoshcrawford
