@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Josh Crawford Resume</title>
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+		integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+		integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+		integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="">
+		<div class="container">
+			<a href="../index.html">← Back</a>
+			<br>
+			<br>
+			<article class="post">
+				<div class="headline-wrap">
+
+					<h1>Publishing Reusable Code on Nuget</h1>
+
+				</div>
+				<!--/ .headline-wrap -->
+				<div class="article-wrap">
+					<p>These days if your project is not using open source code you are either living under a rock or
+						under very strict project requirements. This post highlights how easy it is to publish your open
+						source package to Nuget with ASP.NET 5 and Visual Studio 2015.</p>
+
+					<p>The <em>Roslyn</em> compiler by default will be compiling into memory to keep your builds as fast
+						as possible, however we need output we can publish. Open up the properties of your project and
+						go to the build tab. Make sure “Produce outputs on build” is checked.
+						<br>
+						<br>
+						<img src="./images/properties-build-outputs.png" alt="produce outputs property"
+							title="Produce Outputs on Build">
+						<br>
+						<br>
+						This will make sure the successful build creates a NuGet package (.nupkg) in the Debug or
+						Release directories.
+						<br>
+						<br>
+						<img src="./images/nupkg.png" alt="nuget nupkg package"
+							title="NuGet Nupkg Package">
+						<br>
+						<br>
+						The package can be opened and edited with the <a href="http://npe.codeplex.com/">NuGet Package
+							Explorer</a> to make sure the details are correct before publishing.</p>
+
+					<p>To publish the package login to your account at <a
+							href="https://www.nuget.org/">https://www.nuget.org/</a> and click on the <em>Upload
+							Package</em> link in the menu bar. Select and upload your .nupkg package, edit any details
+						and submit.
+						<br>
+						<br>
+						<img src="./images/nuget.png" alt="nuget upload" title="NuGet Upload">
+						<br>
+						<br>
+						That’s all there is to it. Creating and publishing reusable packages in .NET 5 with Visual
+						Studio 2015 is very straightforward and painless for simple packages. For advanced packages
+						check the documentation <a href="http://docs.nuget.org/">here</a></p>
+
+					<hr>
+					<footer role="contentinfo">
+						<p class="byline"><strong>Publishing Reusable Code on Nuget</strong> was published on <time
+								datetime="2015-01-24T00:00:00+00:00">January 24, 2015</time> and last modified on <time
+								datetime="2015-01-24">January 24, 2015</time>.</p>
+					</footer>
+				</div><!-- /.article-wrap -->
+
+			</article>
+		</div>
+	</div>
+	<br><br>
+	<footer class="container">
+		<span style="font-size: 16px;"></span>
+	</footer>
+</body>
+
+</html>
