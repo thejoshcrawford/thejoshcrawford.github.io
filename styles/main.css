@@ -208,6 +208,7 @@ h1.name {
 
 .list-card div {
 	width: 70%;
+	line-height: 1.4rem;
 }
 
 .list-card h3 {
